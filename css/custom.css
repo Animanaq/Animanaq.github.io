@@ -30,6 +30,15 @@ body {
     transition: all ease .2s;
 }
 
+#btnDown {
+    background: transparent;
+    border: none;
+    bottom: 40px;
+    left: calc(50% - 28px);
+    padding: 0;
+    position: absolute;
+}
+
 #menu {
     padding: 45px 0;
 }
