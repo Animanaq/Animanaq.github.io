@@ -264,7 +264,16 @@ body {
 
 #timeline .tv {
     position: absolute;
+    top: 45px;
     z-index: 1;
+}
+
+#timeline .vision {
+    overflow: hidden;
+    position: absolute;
+    right: 100px;
+    top: 155px;
+    width: 850px;
 }
 /* Timeline */
 
