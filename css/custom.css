@@ -87,6 +87,10 @@ body {
     width: 90%;
 }
 
+.modal-body #chat .screen {
+    padding: 15px 30px;
+}
+
 #chat .screen .item {
     align-items: flex-end;
     column-gap: 16px;
@@ -96,6 +100,19 @@ body {
     margin-bottom: 40px;
     position: relative;
     z-index: 2;
+}
+
+.modal-body #chat .screen .item {
+    margin-bottom: 26px;
+}
+
+#chat .screen .item.right {
+    grid-template-areas: "message avatar-right";
+    grid-template-columns: auto 80px;
+}
+#chat .screen .item.left {
+    grid-template-areas: "avatar-left message";
+    grid-template-columns: 80px auto;
 }
 
 #chat .screen .item .avatar p {
@@ -118,6 +135,7 @@ body {
     grid-area: message;
     line-height: 22px;
     padding: 16px;
+    width: fit-content;
 }
 
 #chat .screen .item .text.typing {
@@ -130,9 +148,11 @@ body {
 
 #chat .screen .item .text.left {
     border-radius: 24px 24px 24px 0px;
+    justify-self: flex-start;
 }
 #chat .screen .item .text.right {
     border-radius: 24px 24px 0px 24px;
+    justify-self: flex-end;
 }
 
 #chat .phone {
