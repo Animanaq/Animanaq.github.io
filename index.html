@@ -53,6 +53,9 @@
       <div class="sticker" style="position:absolute;transform:translateX(-615px) translateY(185px);"><img src="images/stickers/sticker-4.png" alt=""></div>
       <div class="sticker" style="position:absolute;transform:translateX(-675px) translateY(325px);"><img src="images/stickers/sticker-31.png" alt=""></div>
     </div>
+    <button id="btnDown">
+      <img src="images/arrow-down.png" class="mw-100" alt="">
+    </button>
   </section>
   
   <section id="menu">
@@ -609,6 +612,11 @@
           item.style.transform = `${attr}`
         })
       })
+
+      document.querySelector('#btnDown').addEventListener('click', () => {
+          let element = document.querySelector('#menu');
+          element.scrollIntoView({ behavior: 'smooth' });
+        })
   
       let menuItems = document.querySelectorAll('.menu-item')
 
