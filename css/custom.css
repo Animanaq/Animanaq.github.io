@@ -38,6 +38,14 @@ body {
     padding: 0;
     position: absolute;
 }
+#btn_top {
+    background: transparent;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+
+    height: 20px;
+}
 
 #menu {
     padding: 45px 0;
@@ -187,12 +195,24 @@ body {
     background-color: #B627B6;
     color: #fff;
 }
+.button--see_more.purple:hover {
+    background-color: #611761;
+    color: #fff;
+}
 .button--see_more.yellow {
     background-color: #FFEE58;
     color: #000;
 }
+.button--see_more.yellow:hover {
+    background-color: #A79B31;
+    color: #000;
+}
 .button--see_more.orange {
     background-color: #F84532;
+    color: #fff;
+}
+.button--see_more.orange:hover {
+    background-color: #A63124;
     color: #fff;
 }
 
@@ -204,12 +224,18 @@ body {
     background-color: transparent;
     border: none;
 }
-
+#modalPensadores .modal-content {
+    background-color: transparent;
+    border: none;
+}
 #modalPensadores .modal-body {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+#btnCloseModalPensadores:hover {
+opacity: 0.5;
 }
 
 #btnCloseModalPensadores {
@@ -237,7 +263,9 @@ body {
     right: 30px;
     top: 30px;
 }
-
+#btnCloseModalOP :hover {
+    opacity: 0.5;
+}
 
 #modalSimpsons .modal-content {
     background-color: transparent;
@@ -258,7 +286,9 @@ body {
     right: 30px;
     top: 30px;
 }
-
+#btnCloseModalSimpsons :hover{
+opacity: 0.5;
+}
 #modalTemas .modal-content {
     background-color: transparent;
     border: none;
@@ -278,7 +308,9 @@ body {
     right: 30px;
     top: 30px;
 }
-
+#btnCloseModalTemas :hover{
+    opacity: 0.5;
+}
 /* Timeline */
 #timeline {
     align-items: flex-end;
@@ -303,6 +335,7 @@ body {
     right: 100px;
     top: 155px;
     width: 850px;
+
 }
 /* Timeline */
 
@@ -462,4 +495,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.cima {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+
+
 }
